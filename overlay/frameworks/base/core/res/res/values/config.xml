@@ -157,6 +157,15 @@
            <item>"bt-pan"</item>
     </string-array>
 
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">25</integer>
+
+    <!-- Dream of notifications -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
+
     <!-- Array of allowable ConnectivityManager network types for tethering -->
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
          [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
@@ -252,7 +261,7 @@
             16 - App switch
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">17</integer>
+    <integer name="config_deviceHardwareKeys">65</integer>
 
     <!-- Performance profiles -->
     <!--string name="config_perf_profile_prop">sys.perf.profile</string-->
